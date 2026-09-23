@@ -1,0 +1,56 @@
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffe8d6;
+}
+
+h1{
+    color: #f67b7b;
+    font-size: 45px;
+    font-family: "Arial Black", Arial, sans-serif;
+    font-weight: 900;
+
+    background-color: #ffc6c6;
+    padding: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    animation: rebote 1.5s infinite;
+}
+
+@keyframes rebote {
+    0%, 100%{
+        transform: translateY(0) scale(1);
+    }
+
+    50%{
+        transform: translateY(-10px);
+    }
+}
+
+.juego-container{
+    margin-top: 40px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.hole{
+    width: 100px;
+    height: 100px;
+    background-color: #b08f76;
+    border-radius: 50%;
+}
+
+.topo{
+    display: none;
+    font-size: 60px;
+}
+
+.topo.activo{
+    display: block;
+}
